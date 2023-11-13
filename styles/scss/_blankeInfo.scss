@@ -1,0 +1,222 @@
+.blanket-info{
+    padding-top: 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+    &__img{
+        position: relative;
+        &-desktop{
+            max-width: 100%;
+            height: auto;
+        }
+        &::after{
+            transition: all 0.3s ease 0s;
+            content: "Чохол з білої мікрофабри";
+            position: absolute;
+            top: 30%;
+            right: 14%;
+            color: $blackColor;
+            font-family: 'Russo One';
+            font-size: 40px;
+            max-width: 300px;
+            width: 100%;
+        }
+        &::before{
+            transition: all 0.3s ease 0s;
+            content: "Хлопкопон";
+            position: absolute;
+            color: $blackColor;
+            font-family: 'Russo One';
+            font-size: 40px;
+            right: 14%;
+            bottom: 13%;
+            width: 100%;
+            text-align: end;
+        }
+        &-mobile{
+            display: none;
+        }
+    }
+
+    &__list{
+        padding-top: 100px;
+        padding-bottom: 100px;
+        display: flex;
+        flex-direction: column;
+        gap: 80px;
+    }
+    &__block{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 40px;
+
+        img{
+            width: 100%;
+            max-width: 600px;
+            height: auto;
+            display: block;
+        }
+        &-description{
+            max-width: 950px;
+            width: 100%;
+        }
+
+        h3{
+            color: $yellowColor;
+            font-size: 50px;
+        }
+
+        p{
+            color: $blackColor;
+            font-size: 30px;
+        }
+    }
+
+    @media (max-width: 1650px) {
+        &__img{
+            &::after{
+                font-size: 30px;
+                top: 35%;
+                right: 7%;
+            }
+            &::before{
+                font-size: 30px;
+                right: 15%;
+                bottom: 13%;
+            }
+        }
+    }
+
+    @media (max-width: 1500px) {
+        &__img{
+            &::after{
+                top: 30%;
+                right: 0%;
+            }
+            &::before{
+                bottom: 15%;
+                right: 4%;
+            }
+        }
+    }
+
+    @media (max-width: 1200px) {
+        &__img{
+            &::after{
+                top: 30%;
+                right: -100px;
+            }
+            &::before{
+                bottom: 15%;
+                right: 4%;
+            }
+        }
+    }
+
+    @media (max-width: 1200px) {
+        &__img{
+            &::after{
+                max-width: 200px;
+                font-size: 20px;
+                top: 30%;
+                right: -10px;
+            }
+            &::before{
+                font-size: 20px;
+                bottom: 15%;
+                right: 4%;
+            }
+        }
+    }
+
+    @media (max-width: 1024px) {
+        &__block{
+            gap: 40px;
+    
+            img{
+                max-width: 300px;
+            }
+    
+            h3{
+                font-size: 40px;
+            }
+    
+            p{
+                color: $blackColor;
+                font-size: 20px;
+            }
+        }
+    }
+
+    @media (max-width: 768px) {
+        &__img{
+            &-desktop{
+                display: none;
+            }
+            &-mobile{
+                max-width: 100%;
+                height: auto;
+                display: block;
+            }
+            &::after{
+                width: auto;
+                font-size: 15px;
+                top: -20px;
+                right: 10px;
+                max-width: 300px;
+            }
+            &::before{
+                font-size: 15px;
+                bottom: 10px;
+                right: 0;
+                max-width: 200px;
+            }
+        }
+
+        &__block{
+            img{
+                max-width: 200px;
+                width: 100%;
+                display: block;
+            }
+        }
+
+        &__block-description{
+            h3{
+                font-size: 25px;
+            }
+            p{
+                font-size: 15px;
+            }
+        }
+    }
+
+    @media (max-width: 425px) {
+        &__img{
+            &::after{
+                font-size: 10px;
+                top: -10px;
+                right: 0px;
+            }
+            &::before{
+                font-size: 10px;
+                bottom: 5px;
+                right: 0;
+            }
+        }
+        &__block{
+            flex-wrap: wrap;
+            justify-content: center;
+            &-description{
+                h3,p{
+                    text-align: center;
+                }
+            }
+        }
+    }
+} 
+.flexDirectionReverse{
+    display: flex;
+    flex-direction: row-reverse;
+}

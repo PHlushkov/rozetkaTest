@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+ul {
+    list-style: none;
+}
+
+h1,h2,h3,h4,h5{
+    font-family: 'Russo One', sans-serif;
+}
+
+p{
+    font-family: 'Montserrat', sans-serif;
+}
+
+$container-lg: 1650px;
+$container-padding-x: 15px;
+
+//text size 
+
+$fs-h2: 37px;
+$fs-h3: 33px;
+$txt-simple: 18px;
+
+// color
+
+$whiteColor: #ffffff;
+$yellowColor: #e27601;
+$blackColor: #000000;
+
+// container
+
